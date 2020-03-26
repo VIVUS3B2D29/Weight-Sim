@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gaining Sim</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+                                                     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<nav>
+    <a href="index.html"><button>Play</button></a>
+    <a href="help.html"><button>How To Play</button></a>
+</nav>
+<div class="container">
+    <div id="inputs" class="text-left">
+        <h3>Girl Starting Attributes</h3>
+        <h5>Name</h5>
+        <label for="girlName">Girl's Name</label>
+        <input type="text" id="girlName">
+        <h5>Will</h5>
+        <label for="will">Will to Lose Weight</label>
+        <input type="range" id="will" min="0" max="4">
+        <h5>Addiction</h5>
+        <label for="addiction">Food Addiction</label>
+        <input type="range" id="addiction" min="0" max="4">
+        <h5>Fitness</h5>
+        <label for="fitness">Fitness Level</label>
+        <input type="range" id="fitness" min="0" max="4">
+        <h5>Weight</h5>
+        <label for="startWeight">Starting Weight (100-400)</label>
+        <input type="number" id="startWeight" min="100" max="400">
+        <p class="text-danger">Please use the suggested values and don't leave fields blank! I didn't do any input validation...</p>
+        <button id="start">Start</button>
+    </div>
+    <div id="game">
+        <div class="basic">
+            <h3 id="day">Day 1</h3>
+        </div>
+        <div class="info">
+            <h3 id="name">Name</h3>
+            <p id="size"></p>
+            <p id="weight"></p>
+            <p id="willText"></p>
+            <p id="addictionText"></p>
+            <p id="fitnessText"></p>
+        </div>
+        <div class="main">
+            <h3>Daily Summary</h3>
+            <div class="summary">
+                <p id="summary"></p>
+            </div>
+            <div class="controls">
+                <button class="btn btn-secondary" id="nextDay">Next Day</button>
+                <button class="btn btn-secondary" id="nextWeek">Next Week</button>
+                <button class="btn btn-secondary" id="nextMonth">Next Month</button>
+            </div>
+        </div>
+        <div class="habits">
+            <h3>Habit Progress</h3>
+            <p id="mealHabit"></p>
+            <p id="snackHabit"></p>
+            <p id="exerciseHabit"></p>
+        </div>
+    </div>
+</div>
+
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script src="View.js"></script>
+<script src="Habit.js"></script>
+<script src="AddictionEvents.js"></script>
+<script src="ExerciseHabit.js"></script>
+<script src="SnackHabit.js"></script>
+<script src="MealHabit.js"></script>
+<script src="Person.js"></script>
+<script src="controller.js"></script>
+</body>
+</html>

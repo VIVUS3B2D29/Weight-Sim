@@ -1,0 +1,77 @@
+body {
+    background-color: rgb(24,26,27);
+    text-align: center;
+}
+
+p, h1, h2, h3, h4, h5, h6, label {
+    color: rgb(218,215,210);
+}
+
+.container {
+    width: 100%;
+}
+
+.basic {
+    margin-top: 25px;
+    display: block;
+}
+
+.info {
+    vertical-align: top;
+    margin-top: 20px;
+    display: inline-block;
+    width: 20%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgb(5,75,118);
+    text-align: left;
+}
+
+.main {
+    vertical-align: top;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-block;
+    width: 50%;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+}
+
+.habits {
+    margin-top: 20px;
+    vertical-align: top;
+    display: inline-block;
+    width: 20%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgb(5,75,118);
+    text-align: left;
+}
+
+.summary {
+    padding: 10px;
+    display: block;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#name {
+    margin-bottom: 15px;
+}
+
+#inputs {
+    margin-top: 20px;
+}
+
+.controls {
+    text-align: center;
+}
+
+input {
+    width: 8%;
+}
